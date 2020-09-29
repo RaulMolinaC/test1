@@ -6,7 +6,9 @@ namespace Test1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!!!");
+            double s1;
+
+            s1 = Eqution
         }
     }
 }
