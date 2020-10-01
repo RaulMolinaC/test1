@@ -6,16 +6,17 @@ namespace Test1
     {
         public static double GetVectorLength2(double x, double y, double z)
 
-         
-        double aux; 
+        {
+            double aux;
 
-        double length;
+            double length;
 
-        aux = x * x + y * y + z* z;
+            aux = x * x + y * y + z * z;
 
-        lenght = System.Math.Sqrt(aux);
+            length = System.Math.Sqrt(aux);
 
-        return length;
+            return length;
 
+        }
     }
 }

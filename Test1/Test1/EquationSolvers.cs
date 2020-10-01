@@ -8,24 +8,33 @@ namespace Test1
 {
     class EquationSolvers
     {
-        public static double SolveEquation(double a, double b;)
+        public static double SolveEquation(double a, double b)
 
-        return -b / a;
+        {
+            double x;
+
+            x = -b / a;
+
+            return x;
+
+        }
 
 
 
-        public static double SolveEquation2(double a, double b, double c;)
+        public static double SolveEquation2(double a, double b, double c)
 
-        double aux1, aux2, x;
+        {
+            double aux1, aux2, x;
 
-        aux1= b * b - 4.0 * a* c;
+            aux1= b* b - 4.0 * a * c;
 
+            aux2 = System.Math.Sqrt(aux1);
 
-        aux2 = System.Math.Sqrt(aux1);
+            x = (-b + aux2) / (2.0 * a);
 
-        x = (-b + aux2) / (2.0 * a);
+            return x;
 
-        return x;
+         }
 
 
     }
