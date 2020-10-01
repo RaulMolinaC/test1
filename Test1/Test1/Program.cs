@@ -56,7 +56,6 @@ namespace Test1
 
                 System.Console.WriteLine("S5 = " + s5);
 
-
             }
 
 
@@ -66,8 +65,17 @@ namespace Test1
 
                 System.Console.WriteLine("S6 = " + s6);
 
+            }
+
+
+            {
+                bool s7 = Utils.IsEven(4);
+
+                System.Console.WriteLine("S7 = " + s7);
 
             }
+
+
 
 
         }

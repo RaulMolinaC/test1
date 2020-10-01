@@ -27,5 +27,17 @@
         }
 
 
+        // IsEven devuelve true si el valos es par y 
+        // y false en caso contrario
+        public static bool IsEven(int value)
+        {
+            if ((value % 2) == 0)
+                return true;
+            else
+                return false;
+
+        }
+
+
     }
 }
