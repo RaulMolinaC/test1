@@ -37,13 +37,11 @@ namespace Test1
                 System.Console.WriteLine("S3 = " + s3);
 
 
-
-
             }
 
 
-
             {
+
                 double s4;
 
                 s4 = Geometry.GetVectorLength2(1.0, 1.0, 1.0);
@@ -52,7 +50,24 @@ namespace Test1
 
             }
 
+            {
 
+                int s5 = Utils.GetMinValue(3, 5);
+
+                System.Console.WriteLine("S5 = " + s5);
+
+
+            }
+
+
+            {
+
+                int s6 = Utils.GetMaxValue(3, 5);
+
+                System.Console.WriteLine("S6 = " + s6);
+
+
+            }
 
 
         }
