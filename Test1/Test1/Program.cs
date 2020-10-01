@@ -29,11 +29,26 @@ namespace Test1
 
 
             {
+
                 double s3;
 
-                s3 = Geometry.GetVectorLength2(2.0, 3.0, 4.0);
+                s3 = Geometry.GetVectorLength(1.0, 2.0);
 
                 System.Console.WriteLine("S3 = " + s3);
+
+
+
+
+            }
+
+
+
+            {
+                double s4;
+
+                s4 = Geometry.GetVectorLength2(1.0, 1.0, 1.0);
+
+                System.Console.WriteLine("S4 = " + s4);
 
             }
 

@@ -4,6 +4,23 @@ namespace Test1
 {
     class Geometry
     {
+
+        public static double GetVectorLength(double x, double y)
+        {
+            double aux;
+
+            double length;
+
+            aux = x * x + y * y;
+
+            length = System.Math.Sqrt(aux);
+
+            return length;
+
+        }
+
+
+
         public static double GetVectorLength2(double x, double y, double z)
 
         {
