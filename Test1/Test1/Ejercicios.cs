@@ -8,7 +8,7 @@
         {
             int contador;
             contador = 0;
-            while (contador < 100)
+            while (contador < 10)
             {
                 System.Console.WriteLine(contador);
                 // contador = contador + 1;
@@ -33,6 +33,15 @@
                 i = i + 1;
 
             }
+
+        }
+
+
+        public static void Ejercicio3(int numeríco)
+        {
+
+
+
 
         }
 

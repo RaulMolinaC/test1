@@ -22,7 +22,7 @@
             if (a > b)
                 return a;
             else
-                return b; 
+                return b;
 
         }
 
@@ -38,6 +38,23 @@
 
         }
 
+
+
+        public static bool IsPrime(int number)
+        {
+            int i = 2;
+            
+            while (i < number)
+            {
+                if ((number % i)==0)
+                    return false
+
+                i = i + 1;
+
+            }
+            return true;
+
+        }
 
     }
 }
