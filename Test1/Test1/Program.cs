@@ -78,9 +78,12 @@ namespace Test1
             {
                 Ejercicios.Ejercicio1();
 
-
             }
 
+
+            {
+                Ejercicios.Ejercicio2(50);
+            }
 
 
         }
