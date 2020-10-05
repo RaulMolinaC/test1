@@ -32,9 +32,7 @@
                     System.Console.WriteLine(i);
                 i = i + 1;
 
-
             }
-
 
         }
 

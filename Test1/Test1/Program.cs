@@ -36,7 +36,6 @@ namespace Test1
 
                 System.Console.WriteLine("S3 = " + s3);
 
-
             }
 
 
