@@ -39,7 +39,7 @@
 
         public static void Ejercicio3(int numerico)
         {
-            bool es_primo = Utils.IsPrime(numerico);
+            bool es_primo = Utils.IsPrime(numerico); 
             if (es_primo)
                 System.Console.WriteLine("El número " + numerico + " es primo");
             else
