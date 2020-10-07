@@ -41,9 +41,9 @@
         {
             bool es_primo = Utils.IsPrime(numerico);
             if (es_primo)
-                System.Console.WriteLine("El número " + numerico + "es primo");
+                System.Console.WriteLine("El número " + numerico + " es primo");
             else
-                System.Console.WriteLine("El número " + numerico + "no es primo");
+                System.Console.WriteLine("El número " + numerico + " no es primo");
 
 
 

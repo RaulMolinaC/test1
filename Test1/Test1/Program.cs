@@ -95,13 +95,7 @@ namespace Test1
                     i++;
 
                 }
-
-
-
-
-
-                
-
+                           
 
             }
 
