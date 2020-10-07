@@ -46,8 +46,8 @@
             
             while (i < number)
             {
-                if ((number % i)==0)
-                    return false
+                if ((number % i) == 0)
+                    return false;
 
                 i = i + 1;
 
