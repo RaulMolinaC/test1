@@ -148,6 +148,34 @@ namespace Test1
         }
 
 
+        public static void Ejercicio(9)
+        {
+
+            int aa = 0;
+            int a = 1;
+
+             
+            int i = 0;
+            int n = 100;
+            while (i < n)
+            {
+
+                System.Console.WriteLine
+
+              
+
+
+            }
+
+
+
+
+
+
+
+
+
+        }
 
 
 
