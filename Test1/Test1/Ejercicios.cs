@@ -1,4 +1,7 @@
-﻿namespace Test1
+﻿using System.Reflection.Metadata.Ecma335;
+using System.Security.Cryptography.X509Certificates;
+
+namespace Test1
 {
     class Ejercicios
     {
@@ -120,6 +123,30 @@
 
 
         }
+
+
+
+        public static void Ejercicio8()
+        {
+
+            int i = 0;
+            int n = 100;
+            while (i < n)
+            {
+                              
+                if (Utils.IsEven(i))                     
+                    System.Console.WriteLine(i);
+                else                           
+                    System.Console.WriteLine(-i);
+
+                i++;
+
+            }
+
+
+
+        }
+
 
 
 
