@@ -39,7 +39,7 @@
 
         public static void Ejercicio3(int numerico)
         {
-            bool es_primo = Utils.IsPrime(numerico); 
+            bool es_primo = Utils.IsPrime(numerico);
             if (es_primo)
                 System.Console.WriteLine("El número " + numerico + " es primo");
             else
@@ -48,6 +48,81 @@
 
 
         }
+
+
+        public static void Ejercicio4()
+        {
+            int i = 0;
+            int n = 100;
+            while (i < n)
+            {
+                System.Console.WriteLine(i);
+
+                i++;
+
+            }
+
+
+        }
+
+
+        public static void Ejercicio5()
+        {
+
+            int i = 0;
+            int n = 100;
+            while (i < n)
+            {
+
+                System.Console.WriteLine(i * 3);
+
+                i++;
+                             
+            }
+                         
+        
+        
+        }
+
+
+        public static void Ejercicio6()
+        {
+
+            int i = 0;
+            int n = 100;
+            while (i < n)
+            {
+
+                System.Console.WriteLine(i * i);
+
+                i++;
+
+            }
+
+
+
+        }
+
+        public static void Ejercicio7()
+        {
+
+            int i = 0;
+            int n = 100;
+            while (i < n)
+            {
+
+                System.Console.WriteLine(5 - i);
+
+                i++;
+
+            }
+
+
+
+        }
+
+
+
 
     }
 }

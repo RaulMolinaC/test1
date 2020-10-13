@@ -99,6 +99,28 @@ namespace Test1
 
             }
 
+
+            {
+                Ejercicios.Ejercicio4();
+            }
+
+
+            {
+                Ejercicios.Ejercicio5();
+            }
+
+
+            {
+                Ejercicios.Ejercicio6();
+            }
+
+            {
+                Ejercicios.Ejercicio7();
+            }
+
+
+
+
         }
 
                 
