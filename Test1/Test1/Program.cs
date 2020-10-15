@@ -123,6 +123,10 @@ namespace Test1
                 Ejercicios.Ejercicio8();
             }
 
+
+            {
+                Ejercicios.Ejercicio9();
+            }
         }
 
                 

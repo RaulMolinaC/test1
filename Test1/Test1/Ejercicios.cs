@@ -148,28 +148,30 @@ namespace Test1
         }
 
 
-        public static void Ejercicio(9)
+        public static void Ejercicio9()
         {
 
             int aa = 0;
-            int a = 1;
-
-             
+            int a = 1;                        
             int i = 0;
             int n = 100;
-            while (i < n)
+
+            System.Console.WriteLine(aa);
+            System.Console.WriteLine(a);
+            while(i < n) 
             {
 
-                System.Console.WriteLine
+                System.Console.WriteLine(aa + a);
+                int Aux = a;
+                a = aa + a;
+                aa = a;
 
+                i++;
               
-
-
             }
 
 
 
-            0, 1, 1, 2, 3, 5, 8, 13, 21,....
 
 
 
