@@ -148,7 +148,7 @@ namespace Test1
         }
 
 
-        public static void Ejercicio(9)
+        public static void Ejercicio9()
         {
 
             int aa = 0;
@@ -167,16 +167,24 @@ namespace Test1
 
             }
 
+            //0, 1, 1, 2, 3, 5, 8, 13, 21,....
+
+        }
 
 
-            0, 1, 1, 2, 3, 5, 8, 13, 21,....
+        public static void Asteriscos(int count)
+        {
 
-
+            int i = 0;
+            while (i < count)
+            {
+                System.Console.Write("*");
+                i++;
+            }
 
 
 
         }
-
 
 
     }
