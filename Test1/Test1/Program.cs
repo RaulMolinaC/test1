@@ -127,6 +127,11 @@ namespace Test1
             {
                 Ejercicios.Ejercicio9();
             }
+
+
+            {
+                Ejercicios.Asteriscos2(5);
+            }
         }
 
                 

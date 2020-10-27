@@ -184,11 +184,16 @@ namespace Test1
                 System.Console.Write("*");
                 i++;
             }
-
+        }
+         public static void Asteriscos2(int count)
+        {
+            for (int i = 0; i <= 100; i++)
+            {
+                System.Console.Write("*");
+            }
 
 
         }
-
 
     }
 }
