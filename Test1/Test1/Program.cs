@@ -132,6 +132,22 @@ namespace Test1
             {
                 Ejercicios.Asteriscos2(5);
             }
+
+            {
+                EjerciciosExamen.Sum(1,2);
+            }
+
+            {
+                EjerciciosExamen.Rest(3,1);
+            }
+
+            {
+                EjerciciosExamen.MinValue(1,3);
+            }
+
+            {
+                EjerciciosExamen.EsMenor(1, 3);
+            }
         }
 
                 
