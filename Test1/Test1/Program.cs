@@ -148,6 +148,18 @@ namespace Test1
             {
                 EjerciciosExamen.EsMenor(1, 3);
             }
+
+            {
+                EjerciciosExamen.Cat("Ho", "l", "a");
+            }
+
+            {
+                EjerciciosExamen.NoSe(3, 4);
+            }
+
+            {
+                EjerciciosExamen.EsMenor3(3, 2, 4);
+            }
         }
 
                 

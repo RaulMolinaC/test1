@@ -1,4 +1,5 @@
 ﻿using System.Reflection.Metadata.Ecma335;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 namespace Test1
 {
@@ -43,6 +44,44 @@ namespace Test1
             return (a < b);
         }
 
+        //Hacer una función a la que se le pasen 3 string y devuelva la concatenación de los 3 string.
+        public static string Cat(string S1, string S2, string S3)
+        {
+            return (S1 + S2 + S3);
+        }
 
+        //Hacer una función que reciba 2 int y devuelva -1 si el priemro es menor que el 2º, +1 si el segundo es menor que el 1º, 0 en cualquier otro caso (que sean iguales)
+        public static int NoSe(int a, int b)
+        {
+            if (a < b)
+                return -1;
+
+            if (a > b)
+                return 1;
+
+            return 0;
+        }
+
+        //Hacer una función que te devuelva el menor de tres int.
+        public static int EsMenor3(int a, int b, int c)
+        {
+            if (a < b)
+            {
+                if (a < c)
+                    return a;
+                else
+                    return c;
+            }
+            else
+            {
+                if (b < c)
+                    return b;
+                else
+                    return c;
+            }
+
+        }
     }
+
+
 }
