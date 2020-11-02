@@ -160,6 +160,14 @@ namespace Test1
             {
                 EjerciciosExamen.EsMenor3(3, 2, 4);
             }
+
+            {
+                EjerciciosExamen.Serie(10);
+            }
+
+            {
+                EjerciciosExamen.Serie2(10);
+            }
         }
 
                 

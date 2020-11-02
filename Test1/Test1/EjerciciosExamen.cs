@@ -8,9 +8,9 @@ namespace Test1
         //Hacer una función a la que se le pasen dos números enteros y que devuelva la suma de esos dos números.
         public static int Sum(int a, int b)
         {
-          int result = a + b;
+            int result = a + b;
 
-          return result;
+            return result;
         }
 
         //hacer una función que reciba dos reales y hacer la resta.
@@ -26,7 +26,7 @@ namespace Test1
                 return a;
 
             else
-                return b;                       
+                return b;
         }
 
         //Hacer una función que reciba como parametro deos enteros y devuelva si el primero es menor que el segundo.
@@ -79,6 +79,57 @@ namespace Test1
                 else
                     return c;
             }
+
+        }
+
+        //hacer una función que reciba un código de error he imprima por pantalla "Error grave" si el código de error es 0
+        //"Error moderado"  cuando 1
+        //"Error leve" cuando 2
+        //"Error desconocido" cuando otro caso
+        public static void PrintError(int code)
+        {
+            switch (code)
+            {
+                case 0:
+                    System.Console.WriteLine("Error grave");
+                    break;
+                case 1:
+                    System.Console.WriteLine("Error moderado");
+                    break;
+                case 2:
+                    System.Console.WriteLine("Error leve");
+                        break;
+                default:
+                    System.Console.WriteLine("Error desconocido");
+                    break;
+            }
+        }
+
+        //Hacer una función a la que se le pase un número e imprima por pantalla una serie como la siguiente serie función(10): 0, 3, 6, 9,
+        public static void Serie(int a)
+        {
+            int i = 0;
+            while (i <= a)
+            {                
+                System.Console.Write(i + ",");
+
+                i = 3;               
+            }
+        }
+        
+        //Hacer una función que imprima por pantalla la siguiente serie Serie(10): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
+        public static void Serie2(int n)
+        {            
+            for (int i = 0; i < n; i++)            
+                System.Console.Write(i + ",");                            
+        }
+
+        //Lo mismo que el anterior pero sin la coma del final
+        public static void Serie3(int n)
+        {
+            System.Console.Write(0);
+            for (int i = 1; i < n; i++)
+                System.Console.Write("," + i);
 
         }
     }
