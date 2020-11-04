@@ -168,6 +168,14 @@ namespace Test1
             {
                 EjerciciosExamen.Serie2(10);
             }
+
+            {
+                EjerciciosExamen.Serie3(10);  
+            }
+
+            {
+                EjerciciosExamen.SerieAsteriscoMas(5);  
+            }
         }
 
                 

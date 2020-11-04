@@ -132,7 +132,49 @@ namespace Test1
                 System.Console.Write("," + i);
 
         }
-    }
 
+        //Hacer una función que se le pase un número n e 
+        public static void SerieAsteríscos(int n)
+        {
+            for (int i = 0; i < n; i++)
+                System.Console.Write("*");
+        }
+
+        //Hacer lo mismo que el anterior pero alternando * con +
+        public static void SerieAsteriscoMas(int n)
+        {
+            for (int i = 0; i < n; i++)
+            {
+                if ((i % 2) == 0)
+                    System.Console.Write("*");
+                else
+                    System.Console.Write("+");
+            }
+        }
+
+        //Hacer una fución que devuelva el menor de nueve enteros ocupando una sola línea.
+        public static int EsMenor9(int n1, int n2, int n3, int n4, int n5, int n6, int n7, int n8, int n9)
+        {
+            int menor1 = EsMenor3(n1, n2, n3);
+            int menor2 = EsMenor3(n4, n5, n6);
+            int menor3 = EsMenor3(n7, n8, n9);
+            int Menor3 = EsMenor3 (menor1, menor2, menor3);
+            return Menor3;
+        }
+
+        public static void ColumnasFilas(int n)
+        {
+            for(int f = 0; f < n; f++)
+            {
+                for (int c = 0; c < n; c++)
+                {
+                    System.Console.Write("*");
+                }
+                System.Console.WriteLine();
+            }
+        }
+
+
+    }
 
 }
