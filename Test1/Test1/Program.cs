@@ -212,6 +212,17 @@ namespace Test1
             {
                 EjerciciosExamen.Ejercicio21(8);  
             }
+
+            while (true)
+            {
+                for (int i = 0; i < 10; i++)
+                {
+                    EjerciciosExamen.ColumnasFilas7(i);
+                    System.Threading.Thread.Sleep(1);
+                    System.Console.Clear();
+                }
+
+            }
         }
 
 
