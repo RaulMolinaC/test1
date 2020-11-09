@@ -20,7 +20,6 @@ namespace Test1
 
                 contador = contador + 1;
             }
-
         }
 
         //Haz una función que imprima los 
@@ -36,7 +35,6 @@ namespace Test1
                 i = i + 1;
 
             }
-
         }
 
 
@@ -47,25 +45,19 @@ namespace Test1
                 System.Console.WriteLine("El número " + numerico + " es primo");
             else
                 System.Console.WriteLine("El número " + numerico + " no es primo");
-
-
-
         }
 
 
         public static void Ejercicio4()
         {
             int i = 0;
-            int n = 100;
+            int n = 20;
             while (i < n)
             {
                 System.Console.WriteLine(i);
 
                 i++;
-
             }
-
-
         }
 
 
@@ -73,111 +65,84 @@ namespace Test1
         {
 
             int i = 0;
-            int n = 100;
+            int n = 20;
             while (i < n)
             {
-
                 System.Console.WriteLine(i * 3);
 
-                i++;
-                             
-            }
-                         
-        
+                i++;                             
+            }                        
         
         }
 
 
         public static void Ejercicio6()
         {
-
             int i = 0;
-            int n = 100;
+            int n = 20;
             while (i < n)
             {
 
                 System.Console.WriteLine(i * i);
 
                 i++;
-
             }
-
-
-
         }
 
         public static void Ejercicio7()
         {
-
             int i = 0;
-            int n = 100;
+            int n = 20;
             while (i < n)
             {
-
                 System.Console.WriteLine(5 - i);
 
                 i++;
-
             }
-
-
-
         }
 
 
 
         public static void Ejercicio8()
         {
-
             int i = 0;
-            int n = 100;
+            int n = 20;
             while (i < n)
-            {
-                              
+            {                              
                 if (Utils.IsEven(i))                     
                     System.Console.WriteLine(i);
                 else                           
                     System.Console.WriteLine(-i);
 
                 i++;
-
             }
-
-
-
         }
 
 
         public static void Ejercicio9()
         {
-
             int aa = 0;
             int a = 1;                        
             int i = 0;
-            int n = 100;
+            int n = 30;
 
             System.Console.WriteLine(aa);
             System.Console.WriteLine(a);
             while(i < n) 
             {
-
                 System.Console.WriteLine(aa + a);
                 int Aux = a;
                 a = aa + a;
                 aa = a;
 
-                i++;
-              
+                i++;              
             }
-
             //0, 1, 1, 2, 3, 5, 8, 13, 21,....
-
         }
 
 
         public static void Asteriscos(int count)
         {
-
             int i = 0;
             while (i < count)
             {
@@ -185,15 +150,13 @@ namespace Test1
                 i++;
             }
         }
-         public static void Asteriscos2(int count)
+
+        public static void Asteriscos2(int count)
         {
-            for (int i = 0; i <= 100; i++)
+            for (int i = 0; i <= count; i++)
             {
-                System.Console.Write("*");
+                System.Console.WriteLine("*");
             }
-
-
         }
-
     }
 }

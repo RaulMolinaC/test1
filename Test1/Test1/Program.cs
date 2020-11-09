@@ -8,13 +8,11 @@ namespace Test1
         {
 
             {
-
                 double s1;
 
                 s1 = EquationSolvers.SolveEquation(2.0, -4.0);
 
                 System.Console.WriteLine("S1 = " + s1);
-
             }
 
 
@@ -24,46 +22,37 @@ namespace Test1
                 s2 = EquationSolvers.SolveEquation2(1.0, -1.0, 0.0);
 
                 System.Console.WriteLine("S2 = " + s2);
-
             }
 
 
             {
-
                 double s3;
 
                 s3 = Geometry.GetVectorLength(1.0, 2.0);
 
                 System.Console.WriteLine("S3 = " + s3);
-
             }
 
 
             {
-
                 double s4;
 
                 s4 = Geometry.GetVectorLength2(1.0, 1.0, 1.0);
 
                 System.Console.WriteLine("S4 = " + s4);
-
             }
 
             {
-
                 int s5 = Utils.GetMinValue(3, 5);
 
                 System.Console.WriteLine("S5 = " + s5);
-
             }
 
 
             {
-
                 int s6 = Utils.GetMaxValue(3, 5);
 
                 System.Console.WriteLine("S6 = " + s6);
-
             }
 
 
@@ -71,17 +60,15 @@ namespace Test1
                 bool s7 = Utils.IsEven(4);
 
                 System.Console.WriteLine("S7 = " + s7);
-
             }
 
             {
                 Ejercicios.Ejercicio1();
-
             }
 
 
             {
-                Ejercicios.Ejercicio2(50);
+                Ejercicios.Ejercicio2(20);
             }
 
 
@@ -93,9 +80,7 @@ namespace Test1
                     Ejercicios.Ejercicio3(i);
 
                     i++;
-
-                }
-                           
+                }                       
 
             }
 
@@ -128,6 +113,9 @@ namespace Test1
                 Ejercicios.Ejercicio9();
             }
 
+            {
+                Ejercicios.Asteriscos(10);
+            }
 
             {
                 Ejercicios.Asteriscos2(5);
@@ -150,15 +138,23 @@ namespace Test1
             }
 
             {
+                EjerciciosExamen.EsMenorDe10(5, 10);
+            }
+
+            {
                 EjerciciosExamen.Cat("Ho", "l", "a");
             }
 
             {
-                EjerciciosExamen.NoSe(3, 4);
+                EjerciciosExamen.MayorMenorIgual(3, 4);
             }
 
             {
                 EjerciciosExamen.EsMenor3(3, 2, 4);
+            }
+
+            {
+                EjerciciosExamen.PrintError(2); 
             }
 
             {
@@ -174,11 +170,51 @@ namespace Test1
             }
 
             {
+                EjerciciosExamen.SerieAsteríscos(8); 
+            }
+
+            {
                 EjerciciosExamen.SerieAsteriscoMas(5);  
+            }
+
+            {
+                EjerciciosExamen.EsMenor9(5, 7, 22, 9, 0, 6, 11, 4, 33); 
+            }
+
+            {
+                EjerciciosExamen.ColumnasFilas(6);
+            }
+
+            {
+                EjerciciosExamen.ColumnasFilas2(3);
+            }
+
+            {
+                EjerciciosExamen.ColumnasFilas3(4);
+            }
+
+            {
+                EjerciciosExamen.ColumnasFilas4(4);
+            }
+
+            {
+                EjerciciosExamen.ColumnasFilas5(5);
+            }
+
+            {
+                EjerciciosExamen.ColumnasFilas6(4);
+            }
+
+            {
+                EjerciciosExamen.ColumnasFilas7(5);
+            }
+
+            {
+                EjerciciosExamen.Ejercicio21(8);  
             }
         }
 
-                
+
     }
 
 }

@@ -51,7 +51,7 @@ namespace Test1
         }
 
         //Hacer una función que reciba 2 int y devuelva -1 si el priemro es menor que el 2º, +1 si el segundo es menor que el 1º, 0 en cualquier otro caso (que sean iguales)
-        public static int NoSe(int a, int b)
+        public static int MayorMenorIgual(int a, int b)
         {
             if (a < b)
                 return -1;
@@ -109,35 +109,45 @@ namespace Test1
         public static void Serie(int a)
         {
             int i = 0;
+
             while (i <= a)
             {                
                 System.Console.Write(i + ",");
 
-                i = 3;               
+                i = i + 3;               
             }
+            System.Console.WriteLine();
         }
         
         //Hacer una función que imprima por pantalla la siguiente serie Serie(10): 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 
         public static void Serie2(int n)
-        {            
-            for (int i = 0; i < n; i++)            
-                System.Console.Write(i + ",");                            
+        {
+            {
+                for (int i = 0; i < n; i++)
+                    System.Console.Write(i + ",");
+            }
+            System.Console.WriteLine();
         }
 
         //Lo mismo que el anterior pero sin la coma del final
         public static void Serie3(int n)
         {
-            System.Console.Write(0);
-            for (int i = 1; i < n; i++)
-                System.Console.Write("," + i);
-
+            {
+                System.Console.Write(0);
+                for (int i = 1; i < n; i++)
+                    System.Console.Write("," + i);
+            }
+            System.Console.WriteLine();
         }
 
         //Hacer una función que se le pase un número n e 
         public static void SerieAsteríscos(int n)
         {
-            for (int i = 0; i < n; i++)
-                System.Console.Write("*");
+            {
+                for (int i = 0; i < n; i++)
+                    System.Console.Write("*");
+            }
+            System.Console.WriteLine();
         }
 
         //Hacer lo mismo que el anterior pero alternando * con +
@@ -150,6 +160,7 @@ namespace Test1
                 else
                     System.Console.Write("+");
             }
+            System.Console.WriteLine();
         }
 
         //Hacer una fución que devuelva el menor de nueve enteros ocupando una sola línea.
@@ -162,6 +173,7 @@ namespace Test1
             return Menor3;
         }
 
+        //Hacer una función a la que se le pase un entero y que imprima por pantalla filas y columnas
         public static void ColumnasFilas(int n)
         {
             for(int f = 0; f < n; f++)
@@ -172,8 +184,106 @@ namespace Test1
                 }
                 System.Console.WriteLine();
             }
+            System.Console.WriteLine();
         }
 
+        //Hacer un afunción que se le pase un número entero e imrima por pantalla el mismo número de filas y columnas pero una de "*" y otra de "+"
+        public static void ColumnasFilas2(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                for (int c = 0; c < n; c++)
+                {
+                    if ((f % 2) == 0)
+                        System.Console.Write("*");
+                    else
+                        System.Console.Write("+");
+                }
+                System.Console.WriteLine();
+            }
+            System.Console.WriteLine();
+        }
+
+        //Hacer una función a la que se le pase un entero y que imprima por pantalla filas y columnas
+        public static void ColumnasFilas3(int n)
+        {
+            for (int f = 0; f < n; f++)
+            {
+                for (int c = 0; c <= f; c++)
+                {
+                    System.Console.Write("*");
+                }
+                System.Console.WriteLine();
+            }
+            System.Console.WriteLine();
+        }
+
+        public static void ColumnasFilas4(int n)
+        {
+            for(int f = 0; f < n; f++)
+            {
+                int nespacios = n - f - 1;
+                int nasteriscos = f + 1;
+
+                for (int c = 0; c < nespacios; c++)
+                    System.Console.Write(" ");
+                for (int c = 0; c < nasteriscos; c++)
+                    System.Console.Write("+");
+                System.Console.WriteLine();
+            }
+            System.Console.WriteLine();
+        }
+
+        public static void ColumnasFilas5(int n)
+        {
+            for(int f = 0; f < n; f++)
+            {
+                int nespacios1 = n - f - 1;
+                int nespacios2 = f * 2;
+
+                for (int c = 0; c < nespacios1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                for (int c = 0; c < nespacios2; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                System.Console.WriteLine();
+            }
+            System.Console.WriteLine();
+        }
+
+        public static void ColumnasFilas6(int n)
+        {
+            for(int f = 0; f < n; f++)
+            {
+                int nespacios1 = f;
+                int nespacios2 = (n - f - 1) * 2;
+
+                for (int c = 0; c < nespacios1; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                for (int c = 0; c < nespacios2; c++)
+                    System.Console.Write(" ");
+                System.Console.Write("*");
+                System.Console.WriteLine();
+            }
+            System.Console.WriteLine();
+        }
+
+        public static void ColumnasFilas7(int n)
+        {
+            ColumnasFilas5(n);
+            ColumnasFilas6(n);
+        }
+
+        //Hacer un afunción que devuelva 2 elevado a n, siendo n el parametro que recibe la función
+        public static int Ejercicio21(int n)
+        {
+            int result = 1;
+            for (int i = 0; i < n; i++)
+                result *= 2;
+            return result;
+        }
 
     }
 
