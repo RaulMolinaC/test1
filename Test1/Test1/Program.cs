@@ -234,6 +234,10 @@ namespace Test1
             {
                 EjerciciosExamen.BanderaJaponesa();
             }
+
+            {
+                EjerciciosExamen.Sumatorio(8);
+            }
         }
 
 

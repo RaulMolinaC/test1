@@ -339,6 +339,19 @@ namespace Test1
                 System.Console.WriteLine();
             }
         }
+
+        //Diseña una función que devuelva el sumatorio de un número
+        public static int Sumatorio(int n)
+        {
+            int result = 1;
+            for (int i = 1; i <= n; i++)
+            {
+                result += i;
+            } 
+
+            return result;
+            
+        }
     }
 
     
