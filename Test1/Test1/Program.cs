@@ -7,6 +7,7 @@ namespace Test1
         static void Main(string[] args)
         {
 
+            /*
             {
                 double s1;
 
@@ -222,6 +223,10 @@ namespace Test1
                     System.Console.Clear();
                 }
 
+            }
+            */
+            {
+                EjerciciosExamen.Bandera();
             }
         }
 

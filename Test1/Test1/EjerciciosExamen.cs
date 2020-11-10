@@ -285,6 +285,34 @@ namespace Test1
             return result;
         }
 
+        //Hacer una función que imprima por pantalla la bandera americana 
+        public static void Bandera()
+        {
+            for (int f = 0; f < 10; f++)
+            {
+                for (int c = 0; c < 70; c++)
+                {
+                    if (0 <= c && c <= 4 && 0 <= f && f <=2)
+                    {
+                        int flag = f + c;
+                        if ((flag % 2) == 0)
+                            System.Console.Write("+");
+                        else
+                            System.Console.Write(" ");
+                    }
+                    else if ((f % 4) < 2)
+                    {
+                        System.Console.Write("*");
+                    }
+                    else
+                    {
+                        System.Console.Write(" ");
+                    }
+                }
+                System.Console.WriteLine();
+            }            
+        }
+
     }
 
 }
