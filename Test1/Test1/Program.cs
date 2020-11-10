@@ -225,8 +225,14 @@ namespace Test1
 
             }
             */
+            //
             {
-                EjerciciosExamen.Bandera();
+                //EjerciciosExamen.Bandera();
+            }
+            
+
+            {
+                EjerciciosExamen.BanderaJaponesa();
             }
         }
 

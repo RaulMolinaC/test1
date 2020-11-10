@@ -313,6 +313,33 @@ namespace Test1
             }            
         }
 
+        //Hacer una función que devuelva la distancia entre dos puntos 2D
+        public static double Distancia2D(double x1, double y1, double x2, double y2 )
+        {
+            double vx = x2 - x1;
+            double vy = y2 - y1;
+            return System.Math.Sqrt(vx * vx + vy * vy);
+        }
+
+        //Bandera japonesa
+        public static void BanderaJaponesa()
+        {
+            for (int f = 0; f < 15; f++)
+            {
+                for (int c = 0; c < 70; c++)
+                {
+                    if (f == 0 || f == 14 || c == 0 || c == 69)
+                        System.Console.Write("*");
+
+                    else if (EjerciciosExamen.Distancia2D(35, 7, c, f) <= 5)
+                        System.Console.Write("O");
+                    else
+                        System.Console.Write(" ");
+                }
+                System.Console.WriteLine();
+            }
+        }
     }
 
+    
 }
