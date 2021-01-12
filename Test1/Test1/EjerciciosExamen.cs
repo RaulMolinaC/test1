@@ -284,7 +284,7 @@ namespace Test1
                 result *= 2;
             return result;
         }
-
+        
         //Hacer una función que imprima por pantalla la bandera americana 
         public static void Bandera()
         {
@@ -351,6 +351,56 @@ namespace Test1
 
             return result;
             
+        }
+
+        public static int ReadValue(string message)
+        {
+            while (true)
+            {
+                try
+                {
+                    System.Console.WriteLine(message);
+                    string line = System.Console.ReadLine();
+                    int number = System.Convert.ToInt32(line);
+                    return number;
+                }
+                catch (System.Exception e)
+                {
+                    System.Console.WriteLine("Número no válido");
+                }
+            }
+        }
+
+        public static void Ejercicio7()
+        {
+            int n = EjerciciosExamen.ReadValue("Escriba el número: ");
+            int result = 0;
+            for (int i = 0; i <= n; i++)
+                if((i % 5) == 0)                
+                    result += i;            
+                                             
+            System.Console.WriteLine(result);
+            
+
+        }
+
+        public static void Ejercicio9()
+        {
+            for(int f = 0; f <= 15; f++)
+            {
+                for(int c = 0; c <= 60; c++)
+                {
+                    if (f == 0 || f == 15 || c == 0 || c == 60)
+                        System.Console.Write("*");
+
+                    else if (c < 40 && c > 20)
+                        System.Console.Write("-");
+                    else
+                        System.Console.Write("O");
+
+                }
+                System.Console.WriteLine(" ");
+            }
         }
     }
 

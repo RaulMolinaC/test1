@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Test1
 {
@@ -229,18 +230,62 @@ namespace Test1
             {
                 //EjerciciosExamen.Bandera();
             }
-            
+
 
             {
-                EjerciciosExamen.BanderaJaponesa();
+                //EjerciciosExamen.BanderaJaponesa();
+            }
+
+
+            {
+                // EjerciciosExamen.Sumatorio(8);
             }
 
             {
-                EjerciciosExamen.Sumatorio(8);
+                //EjerciciosExamen.Ejercicio7();
             }
+
+            {
+                //( EjerciciosExamen.Ejercicio9();
+            }
+
+
+            List<int> intList = new List<int>();
+
+            intList.Add(3);
+            intList.Add(5);
+            intList.Add(-1);
+            intList.Add(0);
+            intList.Add(7);
+            intList.Add(-2);
+
+            PrintList(intList);
+
+            PrintOrderedList(intList);
+
+        }
+        public static void PrintList(List<int> intList)
+        {
+            for (int i = 0; i < intList.Count; i++)
+                System.Console.WriteLine(intList[i]);
         }
 
-
+        public static void PrintOrderedList(List<int> intList)
+        {
+            for (int i = 0; i < intList.Count - 1; i++)
+            {
+                for (int j = i + 1; j < intList.Count; j++)
+                {
+                    if (intList[i] > intList[j])
+                    {
+                        int aux = intList[j];
+                        intList[j] = intList[i];
+                        intList[i] = aux;
+                    }
+                }
+                System.Console.WriteLine(intList[i]);
+            }
+        }
     }
 
 }
