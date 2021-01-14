@@ -263,6 +263,7 @@ namespace Test1
 
             PrintOrderedList(intList);
 
+            CompareList(intList, -1);
         }
 
         public static void PrintList(List<int> intList)
@@ -273,7 +274,7 @@ namespace Test1
 
         public static void PrintOrderedList(List<int> intList)
         {
-            for (int i = 0; i < intList.Count - 1; i++)
+            for (int i = 0; i <= intList.Count - 1; i++)
             {
                 for (int j = i + 1; j < intList.Count; j++)
                 {
@@ -285,6 +286,33 @@ namespace Test1
                     }
                 }
                 System.Console.WriteLine(intList[i]);
+            }
+        }
+
+        public static bool CompareList(List<int> intList, int a)
+        {
+            for (int i = 0; i < intList.Count; i++)
+            {
+                if ( a == intList[i])
+                    return true;
+            }
+            return false;
+        }
+
+        public static bool BinariSearch(List<int> intList, int a)
+        {
+            int min = 0;
+            int max = intList.Count - 1;
+
+            while(min <= max)
+            {
+                int mid = (max + min) / 2;
+
+                if (a == mid)
+                    return true;
+                else if (a > mid)
+
+
             }
         }
     }
